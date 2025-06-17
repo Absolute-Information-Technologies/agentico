@@ -1,0 +1,240 @@
+# Instructions
+
+During your interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `.cursorrules` file so you will not make the same mistake again. 
+
+You should also use the `.cursorrules` file as a Scratchpad to organize your thoughts. Especially when you receive a new task, you should first review the content of the Scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
+[X] Task 1
+[ ] Task 2
+
+Also update the progress of the task in the Scratchpad when you finish a subtask.
+Especially when you finished a milestone, it will help to improve your depth of task accomplishment to use the Scratchpad to reflect and plan.
+The goal is to help you maintain a big picture as well as the progress of the task. Always refer to the Scratchpad when you plan the next step.
+
+# Tools
+
+Note all the tools are in python. So in the case you need to do batch processing, you can always consult the python files and write your own script.
+
+## Screenshot Verification
+
+The screenshot verification workflow allows you to capture screenshots of web pages and verify their appearance using LLMs. The following tools are available:
+
+1. Screenshot Capture:
+```bash
+venv/bin/python tools/screenshot_utils.py URL [--output OUTPUT] [--width WIDTH] [--height HEIGHT]
+```
+
+2. LLM Verification with Images:
+```bash
+venv/bin/python tools/llm_api.py --prompt "Your verification question" --provider {openai|anthropic} --image path/to/screenshot.png
+```
+
+Example workflow:
+```python
+from screenshot_utils import take_screenshot_sync
+from llm_api import query_llm
+
+# Take a screenshot
+
+screenshot_path = take_screenshot_sync('https://example.com', 'screenshot.png')
+
+# Verify with LLM
+
+response = query_llm(
+    "What is the background color and title of this webpage?",
+    provider="openai",  # or "anthropic"
+    image_path=screenshot_path
+)
+print(response)
+```
+
+## LLM
+
+You always have an LLM at your side to help you with the task. For simple tasks, you could invoke the LLM by running the following command:
+```
+venv/bin/python ./tools/llm_api.py --prompt "What is the capital of France?" --provider "anthropic"
+```
+
+The LLM API supports multiple providers:
+- OpenAI (default, model: gpt-4o)
+- Azure OpenAI (model: configured via AZURE_OPENAI_MODEL_DEPLOYMENT in .env file, defaults to gpt-4o-ms)
+- DeepSeek (model: deepseek-chat)
+- Anthropic (model: claude-3-sonnet-20240229)
+- Gemini (model: gemini-pro)
+- Local LLM (model: Qwen/Qwen2.5-32B-Instruct-AWQ)
+
+But usually it's a better idea to check the content of the file and use the APIs in the `tools/llm_api.py` file to invoke the LLM if needed.
+
+## Web browser
+
+You could use the `tools/web_scraper.py` file to scrape the web.
+```
+venv/bin/python ./tools/web_scraper.py --max-concurrent 3 URL1 URL2 URL3
+```
+This will output the content of the web pages.
+
+## Search engine
+
+You could use the `tools/search_engine.py` file to search the web.
+```
+venv/bin/python ./tools/search_engine.py "your search keywords"
+```
+This will output the search results in the following format:
+```
+URL: https://example.com
+Title: This is the title of the search result
+Snippet: This is a snippet of the search result
+```
+If needed, you can further use the `web_scraper.py` file to scrape the web page content.
+
+# Lessons
+
+## User Specified Lessons
+
+- You have a python venv in ./venv. Use it.
+- Include info useful for debugging in the program output.
+- Read the file before you try to edit it.
+- Due to Cursor's limit, when you use `git` and `gh` and need to submit a multiline commit message, first write the message in a file, and then use `git commit -F <filename>` or similar command to commit. And then remove the file. Include "[Cursor] " in the commit message and PR title.
+
+## Cursor learned
+
+- For search results, ensure proper handling of different character encodings (UTF-8) for international queries
+- Add debug information to stderr while keeping the main output clean in stdout for better pipeline integration
+- When using seaborn styles in matplotlib, use 'seaborn-v0_8' instead of 'seaborn' as the style name due to recent seaborn version changes
+- Use 'gpt-4o' as the model name for OpenAI's GPT-4 with vision capabilities
+- When working with TypeScript and dynamic data, define proper interface types to avoid type errors
+- For multilingual websites, ensure all dictionary files are updated consistently with the same keys
+- When creating SVG logos for a website, maintain consistent viewBox dimensions, color scheme, and styling across all logos for brand coherence
+- Use Image component in Next.js with proper width/height attributes to avoid layout shifts during loading
+
+# Scratchpad
+
+## Agentic Order Inc Website Project
+
+### Task Overview
+Building a multilingual, service-based website for Agentic Order Inc using Next.js 15, Tailwind CSS, and TypeScript.
+
+### Project Requirements
+- Multilingual support with hreflang tags and language-specific URLs
+- Modern UI/UX design with SVG icons, animations, and interactive elements
+- Static page generation combining solutions, industries, and markets
+- Performance optimization with ISR and lazy loading
+- SEO optimization with structured data and meta tags
+
+### Implementation Plan
+[X] 1. Set up project structure and internationalization
+  - Created directory structure
+  - Set up i18n configuration
+  - Created dictionary files for English and French
+  - Added locale-specific layouts and routing
+[X] 2. Create base components and layouts
+  - Created Header component with navigation and language selector
+  - Created Footer component with links and copyright
+  - Set up root layout with locale redirection
+[X] 3. Implement core pages (home, solutions, industries, contact)
+  - Created home page with hero section, features, and solutions overview
+  - Created solutions page with listing of all solutions
+  - Created dynamic solution page template
+  - Created contact page with form and contact information
+  - Created industries page and dynamic industry page template
+  - Created markets page
+[X] 4. Set up dynamic page generation for solution×industry×market combinations
+  - Created combined page template with generateStaticParams for all valid combinations
+  - Added structured data for SEO optimization
+[X] 5. Add interactive elements and advanced features
+  - Added ROI calculator component
+[X] 6. Optimize for performance and SEO
+  - Added ISR configuration to dynamic pages
+  - Implemented structured data for SEO
+[X] 7. Implement analytics and monitoring
+  - Added Analytics component for page view tracking
+[X] 8. Expand industries and solutions
+  - Added new industries: healthcare, retail, legal, real-estate, call-centers, education
+  - Added new solutions: healthcareai, retailai, scheduleai, supportai, legalai, propertyai
+  - Updated solution-to-industry mappings
+  - Enhanced industry and solution page templates
+  - Added proper TypeScript interfaces for dictionary data
+  - Updated both English and French dictionaries with new content
+[X] 9. Create solution logos and update UI
+  - Created consistent SVG logos for each solution with the same style and color scheme
+  - Created a solutions directory in public/images to store the logos
+  - Updated solution pages to display the appropriate logo
+  - Updated solutions listing page to display logos for each solution
+  - Updated industry pages to display solution logos
+  - Updated home page to display logos in the solutions section
+[X] 10. Implement sticky header with auto-hide functionality
+  - Made header fixed at the top of the page
+  - Added auto-hide functionality after 2 seconds of inactivity
+  - Added slide-down animation when hovering at the top of the page
+  - Added padding to main content to account for the fixed header
+  - Created a hover detection area for better user experience
+[X] 11. Implement dark mode toggle
+  - Created ThemeProvider component for managing theme state
+  - Created ThemeToggle component with sun/moon icons
+  - Updated CSS to support dark mode with CSS variables
+  - Added dark mode styles to Header and Footer components
+  - Configured Tailwind for dark mode support
+
+### Current Progress
+Completed all planned steps. The website now features:
+1. Multilingual support with English and French versions
+2. Dynamic page generation for solutions, industries, and markets
+3. Interactive ROI calculator
+4. Performance optimization with ISR
+5. SEO optimization with structured data and hreflang tags
+6. Analytics for page view tracking
+7. Expanded industry coverage:
+   - Original: Restaurants, Hospitality
+   - Added: Healthcare, Retail, Legal Services, Real Estate, Call Centers, Education
+8. Expanded solution offerings:
+   - Original: OrderlyAi, HotelierAi
+   - Added: HealthcareAi, RetailAi, ScheduleAi, SupportAi, LegalAi, PropertyAi
+9. Consistent visual branding:
+   - Created SVG logos for each solution with consistent style
+   - All logos use the same color scheme (#3B82F6 blue with #EBF5FF background)
+   - Logos represent the function of each solution (e.g., calendar for ScheduleAi, medical cross for HealthcareAi)
+   - Integrated logos throughout the website for visual consistency
+10. Enhanced user experience:
+    - Sticky header that auto-hides after 2 seconds of inactivity
+    - Header reappears when user hovers at the top of the page
+    - Smooth animations for header show/hide transitions
+11. Dark mode support:
+    - Toggle button in the header for switching between light and dark modes
+    - Theme preference saved in localStorage for persistence
+    - Automatic detection of system preference on first visit
+    - Consistent styling across all components in both modes
+
+### Industry Analysis
+We identified several industries where AI voice automation can provide significant benefits:
+
+1. Healthcare
+   - Challenges: High call volumes for appointments, staff burnout, patient no-shows
+   - Solutions: 24/7 appointment scheduling, automated reminders, insurance verification
+
+2. Retail
+   - Challenges: Order status inquiries, seasonal staffing, customer service consistency
+   - Solutions: Automated order updates, return processing, loyalty program management
+
+3. Legal Services
+   - Challenges: Client intake inefficiencies, status inquiries, appointment scheduling
+   - Solutions: Automated client intake, case status updates, intelligent scheduling
+
+4. Real Estate
+   - Challenges: Property showing coordination, maintenance requests, agent availability
+   - Solutions: Automated showing scheduling, maintenance request processing
+
+5. Call Centers
+   - Challenges: High call volumes, agent turnover, quality consistency
+   - Solutions: AI-powered call triage, automated routine inquiries, intelligent routing
+
+6. Education
+   - Challenges: Enrollment inquiries, administrative staff shortages, schedule management
+   - Solutions: Automated enrollment assistance, course registration support
+
+Next steps could include:
+1. Adding more languages
+2. Implementing more interactive features
+3. Setting up a CMS for content management
+4. Adding more detailed analytics dashboards
+5. Expanding to additional industries: financial services, insurance, travel, logistics
+6. Creating industry-specific case studies and ROI examples
+7. Adding animation effects to the SVG logos for enhanced interactivity

@@ -1,0 +1,322 @@
+{
+  "common": {
+    "company_name": "Agentic Order Inc",
+    "tagline": "Automatisation par IA pour les industries de service à haut volume",
+    "learn_more": "En Savoir Plus",
+    "contact_us": "Contactez-Nous",
+    "try_demo": "Essayer la Démo",
+    "request_demo": "Demander une Démo",
+    "calculate_roi": "Calculer le ROI",
+    "read_case_study": "Lire l'Étude de Cas",
+    "view_integrations": "Voir les Intégrations",
+    "languages": "Langues"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "markets": "Marchés Mondiaux",
+    "contact": "Contact",
+    "partners": "Partenaires"
+  },
+  "home": {
+    "hero_title": "Automatisation IA Vocale pour Industries de Service",
+    "hero_subtitle": "Améliorez le service client, optimisez l'efficacité opérationnelle et stimulez la croissance des revenus avec des systèmes d'automatisation multilingues et contextuels basés sur l'IA.",
+    "solutions_title": "Nos Solutions IA",
+    "industries_title": "Industries que Nous Servons",
+    "markets_title": "Présence Mondiale",
+    "features_title": "Fonctionnalités Clés",
+    "features": {
+      "speech_recognition": "Reconnaissance Vocale Avancée",
+      "voice_biometrics": "Biométrie Vocale",
+      "nlp": "Traitement du Langage Naturel",
+      "real_time": "Intégration Commerciale en Temps Réel",
+      "multilingual": "Support Multilingue",
+      "context_aware": "Intelligence Contextuelle"
+    },
+    "testimonials_title": "Ce que Disent Nos Clients",
+    "cta_title": "Prêt à Transformer Votre Entreprise?",
+    "cta_subtitle": "Planifiez une démonstration pour voir comment nos solutions IA peuvent fonctionner pour vous."
+  },
+  "solutions": {
+    "orderlyai": {
+      "name": "OrderlyAi",
+      "subtitle": "Automatisation de Restaurant par IA",
+      "description": "Simplifiez la prise de commandes, les réservations et le service client pour les restaurants grâce à la technologie vocale IA.",
+      "features": [
+        "Commandes téléphoniques automatisées",
+        "Gestion des réservations",
+        "Suivi des préférences client",
+        "Intégration avec le système de point de vente",
+        "Optimisation du menu"
+      ]
+    },
+    "hotelierai": {
+      "name": "HotelierAi",
+      "subtitle": "Assistant IA pour la Gestion Hôtelière",
+      "description": "Améliorez l'expérience des clients et rationalisez les opérations hôtelières grâce à l'automatisation intelligente.",
+      "features": [
+        "Enregistrement/départ automatisé",
+        "Commande de service de chambre",
+        "Services de conciergerie",
+        "Gestion des demandes des clients",
+        "Coordination du service d'entretien"
+      ]
+    },
+    "healthcareai": {
+      "name": "HealthcareAi",
+      "subtitle": "Automatisation de Cabinet Médical",
+      "description": "Simplifiez la prise de rendez-vous, les suivis et les demandes de routine pour les cabinets médicaux.",
+      "features": [
+        "Prise de rendez-vous 24/7",
+        "Rappels automatisés",
+        "Vérification d'assurance",
+        "Suivi des patients",
+        "Demandes de renouvellement d'ordonnance"
+      ]
+    },
+    "retailai": {
+      "name": "RetailAi",
+      "subtitle": "Automatisation du Service Client pour le Commerce",
+      "description": "Améliorez le service client et rationalisez les opérations pour les entreprises de vente au détail de toutes tailles.",
+      "features": [
+        "Mises à jour automatisées de l'état des commandes",
+        "Vérifications de disponibilité des produits",
+        "Traitement des retours",
+        "Gestion des programmes de fidélité",
+        "Recommandations personnalisées"
+      ]
+    },
+    "scheduleai": {
+      "name": "ScheduleAi",
+      "subtitle": "Planification Intelligente de Rendez-vous",
+      "description": "Optimisez la prise de rendez-vous dans tous les secteurs grâce à l'automatisation alimentée par l'IA.",
+      "features": [
+        "Planification en langage naturel",
+        "Coordination multi-calendriers",
+        "Rappels automatisés",
+        "Assistance au report de rendez-vous",
+        "Optimisation des ressources"
+      ]
+    },
+    "supportai": {
+      "name": "SupportAi",
+      "subtitle": "Automatisation du Support Client",
+      "description": "Fournissez un support client 24/7 avec une automatisation vocale et par chat alimentée par l'IA.",
+      "features": [
+        "Support multilingue",
+        "Création et routage de tickets",
+        "Résolution des problèmes courants",
+        "Transfert transparent vers un humain",
+        "Suivi de la satisfaction client"
+      ]
+    },
+    "legalai": {
+      "name": "LegalAi",
+      "subtitle": "Automatisation de Cabinet Juridique",
+      "description": "Rationalisez l'accueil des clients, la planification des rendez-vous et les demandes de routine pour les cabinets juridiques.",
+      "features": [
+        "Automatisation de l'accueil des clients",
+        "Planification des rendez-vous",
+        "Traitement des demandes de documents",
+        "Mises à jour de l'état des dossiers",
+        "Demandes de facturation"
+      ]
+    },
+    "propertyai": {
+      "name": "PropertyAi",
+      "subtitle": "Assistant de Gestion Immobilière",
+      "description": "Améliorez la gestion immobilière et les opérations avec une automatisation intelligente.",
+      "features": [
+        "Planification des visites de propriétés",
+        "Traitement des demandes des locataires",
+        "Traitement des demandes de maintenance",
+        "Rappels de paiement de loyer",
+        "Mises à jour de disponibilité des propriétés"
+      ]
+    }
+  },
+  "industries": {
+    "restaurants": {
+      "name": "Restaurants",
+      "description": "Rationalisez les opérations, améliorez l'expérience client et augmentez la rotation des tables avec des solutions alimentées par l'IA.",
+      "challenges": [
+        "Volume d'appels élevé aux heures de pointe",
+        "Pénurie de personnel",
+        "Précision des commandes",
+        "Temps d'attente des clients",
+        "Gestion des réservations"
+      ],
+      "solutions": [
+        "Prise de commande automatisée",
+        "Réservations vocales",
+        "Suivi des préférences client",
+        "Intégration transparente avec le système de point de vente",
+        "Optimisation de l'allocation du personnel"
+      ]
+    },
+    "hospitality": {
+      "name": "Hôtellerie",
+      "description": "Transformez l'expérience client et optimisez les opérations hôtelières grâce à l'automatisation intelligente.",
+      "challenges": [
+        "Temps de réponse du service client",
+        "Efficacité du personnel",
+        "Support multilingue",
+        "Périodes de pointe d'enregistrement/départ",
+        "Personnalisation du service"
+      ],
+      "solutions": [
+        "Conciergerie virtuelle 24/7",
+        "Support client multilingue",
+        "Service de chambre automatisé",
+        "Entretien prédictif",
+        "Suivi des préférences des clients"
+      ]
+    },
+    "healthcare": {
+      "name": "Santé",
+      "description": "Améliorez l'expérience des patients et optimisez les opérations des cabinets médicaux avec des solutions alimentées par l'IA.",
+      "challenges": [
+        "Volume élevé d'appels pour les rendez-vous",
+        "Épuisement du personnel dû aux tâches routinières",
+        "Absences de patients",
+        "Retards de vérification d'assurance",
+        "Gestion des renouvellements d'ordonnances"
+      ],
+      "solutions": [
+        "Prise de rendez-vous 24/7",
+        "Rappels automatisés aux patients",
+        "Vérification d'assurance",
+        "Automatisation des renouvellements d'ordonnances",
+        "Coordination des suivis de patients"
+      ]
+    },
+    "retail": {
+      "name": "Commerce de Détail",
+      "description": "Améliorez le service client et rationalisez les opérations pour les entreprises de vente au détail de toutes tailles.",
+      "challenges": [
+        "Volume élevé de demandes sur l'état des commandes",
+        "Défis de dotation en personnel saisonnier",
+        "Cohérence du service client",
+        "Traitement des retours",
+        "Accès aux informations d'inventaire"
+      ],
+      "solutions": [
+        "Mises à jour automatisées de l'état des commandes",
+        "Traitement des autorisations de retour",
+        "Vérifications de disponibilité des produits",
+        "Gestion des programmes de fidélité",
+        "Support client en dehors des heures d'ouverture"
+      ]
+    },
+    "legal": {
+      "name": "Services Juridiques",
+      "description": "Optimisez l'accueil des clients, la planification des rendez-vous et les demandes de routine pour les cabinets juridiques.",
+      "challenges": [
+        "Inefficacités dans l'accueil des clients",
+        "Volume élevé de demandes d'état",
+        "Conflits de planification des rendez-vous",
+        "Retards dans la collecte de documents",
+        "Disponibilité en dehors des heures d'ouverture"
+      ],
+      "solutions": [
+        "Accueil automatisé des clients",
+        "Système de mise à jour de l'état des dossiers",
+        "Planification intelligente",
+        "Automatisation des demandes de documents",
+        "Informations juridiques de base 24/7"
+      ]
+    },
+    "real-estate": {
+      "name": "Immobilier",
+      "description": "Rationalisez la gestion immobilière et les opérations avec une automatisation intelligente.",
+      "challenges": [
+        "Coordination des visites de propriétés",
+        "Demandes de maintenance des locataires",
+        "Gestion des demandes de location",
+        "Contraintes de disponibilité des agents",
+        "Besoins de support en dehors des heures d'ouverture"
+      ],
+      "solutions": [
+        "Planification automatisée des visites",
+        "Traitement des demandes de maintenance",
+        "Mises à jour de disponibilité des propriétés",
+        "Système de communication avec les locataires",
+        "Informations sur les propriétés 24/7"
+      ]
+    },
+    "call-centers": {
+      "name": "Centres d'Appels",
+      "description": "Améliorez l'efficacité, réduisez les temps d'attente et améliorez la satisfaction client dans les centres de contact.",
+      "challenges": [
+        "Volumes d'appels élevés",
+        "Rotation du personnel",
+        "Inefficacités de routage des appels",
+        "Cohérence de la qualité",
+        "Couverture en dehors des heures d'ouverture"
+      ],
+      "solutions": [
+        "Triage d'appels alimenté par l'IA",
+        "Automatisation des demandes routinières",
+        "Routage intelligent des appels",
+        "Assistance en temps réel aux agents",
+        "Couverture de service 24/7"
+      ]
+    },
+    "education": {
+      "name": "Éducation",
+      "description": "Améliorez l'efficacité administrative et les services aux étudiants dans les établissements d'enseignement.",
+      "challenges": [
+        "Gestion des demandes d'inscription",
+        "Pénurie de personnel administratif",
+        "Accessibilité des services aux étudiants",
+        "Gestion des emplois du temps",
+        "Support en dehors des heures d'ouverture"
+      ],
+      "solutions": [
+        "Assistance automatisée à l'inscription",
+        "Support à l'inscription aux cours",
+        "Informations sur l'aide financière",
+        "Informations sur les services du campus",
+        "Support aux étudiants 24/7"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Prêt à transformer votre entreprise avec l'IA? Contactez notre équipe.",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "company": "Nom de l'Entreprise",
+      "phone": "Numéro de Téléphone",
+      "industry": "Industrie",
+      "message": "Message",
+      "submit": "Envoyer",
+      "demo_request": "Demander une Démo",
+      "contact_us": "Nous Contacter",
+      "demo_description": "Planifiez une démonstration personnalisée pour voir comment nos solutions IA peuvent fonctionner pour votre entreprise.",
+      "contact_description": "Vous avez des questions ou besoin de plus d'informations? Nous sommes là pour vous aider.",
+      "privacy_notice": "Nous respectons votre vie privée. Vos informations ne seront pas partagées avec des tiers."
+    },
+    "headquarters": "Siège Social",
+    "support_email": "Email de Support Global",
+    "phone_numbers": "Numéros de Téléphone Régionaux"
+  },
+  "footer": {
+    "company": "Entreprise",
+    "about": "À Propos",
+    "careers": "Carrières",
+    "press": "Presse",
+    "blog": "Blog",
+    "resources": "Ressources",
+    "documentation": "Documentation",
+    "case_studies": "Études de Cas",
+    "webinars": "Webinaires",
+    "api": "API",
+    "legal": "Mentions Légales",
+    "privacy_policy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "copyright": "© 2025 Agentic Order Inc. Tous droits réservés."
+  }
+} 

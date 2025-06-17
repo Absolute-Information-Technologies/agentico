@@ -1,0 +1,175 @@
+{
+  "common": {
+    "company_name": "Agentic Order Inc",
+    "tagline": "Automação impulsionada por IA para indústrias de serviços de alto volume",
+    "learn_more": "Saiba mais",
+    "contact_us": "Contate-nos",
+    "try_demo": "Experimente a demo",
+    "request_demo": "Solicitar uma demo",
+    "calculate_roi": "Calcular ROI",
+    "read_case_study": "Ler estudo de caso",
+    "view_integrations": "Ver integrações",
+    "languages": "Idiomas"
+  },
+  "navigation": {
+    "home": "Início",
+    "solutions": "Soluções",
+    "industries": "Indústrias",
+    "markets": "Mercados Globais",
+    "contact": "Contato",
+    "partners": "Parceiros"
+  },
+  "home": {
+    "hero_title": "Automação por IA com prioridade de voz para indústrias de serviços",
+    "hero_subtitle": "Melhore o atendimento ao cliente, otimize a eficiência operacional e impulsione o crescimento da receita com sistemas de automação multilíngues, sensíveis ao contexto e impulsionados por IA.",
+    "solutions_title": "Nossas Soluções de IA",
+    "industries_title": "Indústrias que Atendemos",
+    "markets_title": "Presença Global",
+    "features_title": "Recursos Principais",
+    "features": {
+      "speech_recognition": "Reconhecimento de Fala Avançado",
+      "voice_biometrics": "Biometria de Voz",
+      "nlp": "Processamento de Linguagem Natural",
+      "real_time": "Integração Empresarial em Tempo Real",
+      "multilingual": "Suporte Multilíngue",
+      "context_aware": "Inteligência Sensível ao Contexto"
+    },
+    "testimonials_title": "O que Nossos Clientes Dizem",
+    "cta_title": "Pronto para Transformar seu Negócio?",
+    "cta_subtitle": "Agende uma demonstração para ver como nossas soluções de IA podem trabalhar para você."
+  },
+  "solutions": {
+    "orderlyai": {
+      "name": "OrderlyAi",
+      "subtitle": "Automação de Restaurantes Impulsionada por IA",
+      "description": "Otimize o recebimento de pedidos, reservas e atendimento ao cliente para restaurantes com tecnologia de voz IA.",
+      "features": [
+        "Pedidos telefônicos automatizados",
+        "Gerenciamento de reservas",
+        "Rastreamento de preferências do cliente",
+        "Integração com PDV",
+        "Otimização de cardápio"
+      ]
+    },
+    "hotelierai": {
+      "name": "HotelierAi",
+      "subtitle": "Assistente de Gerenciamento Hoteleiro com IA",
+      "description": "Melhore as experiências dos hóspedes e otimize as operações hoteleiras com automação inteligente.",
+      "features": [
+        "Check-in/check-out automatizado",
+        "Pedidos de serviço de quarto",
+        "Serviços de concierge",
+        "Gerenciamento de solicitações de hóspedes",
+        "Coordenação de limpeza"
+      ]
+    }
+  },
+  "industries": {
+    "restaurants": {
+      "name": "Restaurantes",
+      "description": "Otimize operações, melhore experiências de clientes e aumente a rotatividade de mesas com soluções impulsionadas por IA.",
+      "challenges": [
+        "Alto volume de chamadas em horários de pico",
+        "Escassez de pessoal",
+        "Precisão dos pedidos",
+        "Tempos de espera dos clientes",
+        "Gerenciamento de reservas"
+      ],
+      "solutions": [
+        "Recebimento automatizado de pedidos",
+        "Reservas por voz",
+        "Rastreamento de preferências do cliente",
+        "Integração perfeita com PDV",
+        "Otimização de alocação de pessoal"
+      ]
+    },
+    "hospitality": {
+      "name": "Hotelaria",
+      "description": "Transforme as experiências dos hóspedes e otimize as operações hoteleiras com automação inteligente.",
+      "challenges": [
+        "Tempos de resposta do serviço ao hóspede",
+        "Eficiência da equipe",
+        "Suporte multilíngue",
+        "Períodos de pico de check-in/out",
+        "Personalização do serviço"
+      ],
+      "solutions": [
+        "Concierge virtual 24/7",
+        "Suporte multilíngue para hóspedes",
+        "Serviço de quarto automatizado",
+        "Limpeza preditiva",
+        "Rastreamento de preferências de hóspedes"
+      ]
+    },
+    "healthcare": {
+      "name": "Saúde",
+      "description": "Melhore as experiências dos pacientes e otimize as operações de práticas médicas com soluções impulsionadas por IA.",
+      "challenges": [
+        "Alto volume de chamadas para agendamentos",
+        "Esgotamento da equipe com tarefas rotineiras",
+        "Faltas de pacientes",
+        "Atrasos na verificação de seguros",
+        "Gerenciamento de renovação de receitas"
+      ],
+      "solutions": [
+        "Agendamento de consultas 24/7",
+        "Lembretes automatizados para pacientes",
+        "Verificação de seguros",
+        "Automação de renovação de receitas",
+        "Coordenação de acompanhamento de pacientes"
+      ]
+    },
+    "retail": {
+      "name": "Varejo",
+      "description": "Melhore o atendimento ao cliente e otimize as operações para negócios de varejo de todos os tamanhos.",
+      "challenges": [
+        "Alto volume de consultas sobre status de pedidos",
+        "Desafios de pessoal sazonal",
+        "Consistência no atendimento ao cliente",
+        "Processamento de devoluções",
+        "Acesso a informações de estoque"
+      ],
+      "solutions": [
+        "Atualizações automatizadas de status de pedidos",
+        "Processamento de autorização de devoluções",
+        "Verificações de disponibilidade de produtos",
+        "Gerenciamento de programas de fidelidade",
+        "Suporte ao cliente fora do horário comercial"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contate-nos",
+    "subtitle": "Pronto para transformar seu negócio com IA? Entre em contato com nossa equipe.",
+    "form": {
+      "name": "Nome completo",
+      "email": "Endereço de e-mail",
+      "company": "Nome da empresa",
+      "phone": "Número de telefone",
+      "industry": "Indústria",
+      "message": "Mensagem",
+      "submit": "Enviar",
+      "demo_request": "Solicitar uma demo",
+      "privacy_notice": "Respeitamos sua privacidade. Suas informações não serão compartilhadas com terceiros."
+    },
+    "headquarters": "Sede",
+    "support_email": "E-mail de suporte global",
+    "phone_numbers": "Números de telefone regionais"
+  },
+  "footer": {
+    "company": "Empresa",
+    "about": "Sobre nós",
+    "careers": "Carreiras",
+    "press": "Imprensa",
+    "blog": "Blog",
+    "resources": "Recursos",
+    "documentation": "Documentação",
+    "case_studies": "Estudos de caso",
+    "webinars": "Webinars",
+    "api": "API",
+    "legal": "Legal",
+    "privacy_policy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "copyright": "© 2025 Agentic Order Inc. Todos os direitos reservados."
+  }
+} 

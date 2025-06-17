@@ -1,0 +1,322 @@
+{
+  "common": {
+    "company_name": "Agentic Order Inc",
+    "tagline": "AI-driven automation for high-volume service industries",
+    "learn_more": "Learn More",
+    "contact_us": "Contact Us",
+    "try_demo": "Try Demo",
+    "request_demo": "Request a Demo",
+    "calculate_roi": "Calculate ROI",
+    "read_case_study": "Read Case Study",
+    "view_integrations": "View Integrations",
+    "languages": "Languages"
+  },
+  "navigation": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "markets": "Global Markets",
+    "contact": "Contact",
+    "partners": "Partners"
+  },
+  "home": {
+    "hero_title": "Voice-First AI Automation for Service Industries",
+    "hero_subtitle": "Enhance customer service, improve operational efficiency, and drive revenue growth with AI-driven, multilingual, context-aware automation systems.",
+    "solutions_title": "Our AI Solutions",
+    "industries_title": "Industries We Serve",
+    "markets_title": "Global Presence",
+    "features_title": "Key Features",
+    "features": {
+      "speech_recognition": "Advanced Speech Recognition",
+      "voice_biometrics": "Voice Biometrics",
+      "nlp": "Natural Language Processing",
+      "real_time": "Real-Time Business Integration",
+      "multilingual": "Multilingual Support",
+      "context_aware": "Context-Aware Intelligence"
+    },
+    "testimonials_title": "What Our Clients Say",
+    "cta_title": "Ready to Transform Your Business?",
+    "cta_subtitle": "Schedule a demo to see how our AI solutions can work for you."
+  },
+  "solutions": {
+    "orderlyai": {
+      "name": "OrderlyAi",
+      "subtitle": "AI-Powered Restaurant Automation",
+      "description": "Streamline order taking, reservations, and customer service for restaurants with AI voice technology.",
+      "features": [
+        "Automated phone orders",
+        "Reservation management",
+        "Customer preference tracking",
+        "POS integration",
+        "Menu optimization"
+      ]
+    },
+    "hotelierai": {
+      "name": "HotelierAi",
+      "subtitle": "Hotel Management AI Assistant",
+      "description": "Enhance guest experiences and streamline hotel operations with intelligent automation.",
+      "features": [
+        "Automated check-in/check-out",
+        "Room service ordering",
+        "Concierge services",
+        "Guest request management",
+        "Housekeeping coordination"
+      ]
+    },
+    "healthcareai": {
+      "name": "HealthcareAi",
+      "subtitle": "Medical Practice Automation",
+      "description": "Streamline patient scheduling, follow-ups, and routine inquiries for medical practices.",
+      "features": [
+        "24/7 appointment scheduling",
+        "Automated reminders",
+        "Insurance verification",
+        "Patient follow-ups",
+        "Prescription refill requests"
+      ]
+    },
+    "retailai": {
+      "name": "RetailAi",
+      "subtitle": "Retail Customer Service Automation",
+      "description": "Enhance customer service and streamline operations for retail businesses of all sizes.",
+      "features": [
+        "Automated order status updates",
+        "Product availability checks",
+        "Return processing",
+        "Loyalty program management",
+        "Personalized recommendations"
+      ]
+    },
+    "scheduleai": {
+      "name": "ScheduleAi",
+      "subtitle": "Intelligent Appointment Scheduling",
+      "description": "Optimize appointment scheduling across industries with AI-powered automation.",
+      "features": [
+        "Natural language scheduling",
+        "Multi-calendar coordination",
+        "Automated reminders",
+        "Rescheduling assistance",
+        "Resource optimization"
+      ]
+    },
+    "supportai": {
+      "name": "SupportAi",
+      "subtitle": "Customer Support Automation",
+      "description": "Provide 24/7 customer support with AI-powered voice and chat automation.",
+      "features": [
+        "Multilingual support",
+        "Ticket creation and routing",
+        "Common issue resolution",
+        "Seamless human handoff",
+        "Customer satisfaction tracking"
+      ]
+    },
+    "legalai": {
+      "name": "LegalAi",
+      "subtitle": "Legal Practice Automation",
+      "description": "Streamline client intake, appointment scheduling, and routine inquiries for legal practices.",
+      "features": [
+        "Client intake automation",
+        "Appointment scheduling",
+        "Document request handling",
+        "Case status updates",
+        "Billing inquiries"
+      ]
+    },
+    "propertyai": {
+      "name": "PropertyAi",
+      "subtitle": "Real Estate Management Assistant",
+      "description": "Enhance property management and real estate operations with intelligent automation.",
+      "features": [
+        "Property showing scheduling",
+        "Tenant inquiry handling",
+        "Maintenance request processing",
+        "Rent payment reminders",
+        "Property availability updates"
+      ]
+    }
+  },
+  "industries": {
+    "restaurants": {
+      "name": "Restaurants",
+      "description": "Streamline operations, enhance customer experiences, and increase table turnover with AI-powered solutions.",
+      "challenges": [
+        "High call volume during peak hours",
+        "Staff shortages",
+        "Order accuracy",
+        "Customer wait times",
+        "Reservation management"
+      ],
+      "solutions": [
+        "Automated order taking",
+        "Voice-powered reservations",
+        "Customer preference tracking",
+        "Seamless POS integration",
+        "Staff allocation optimization"
+      ]
+    },
+    "hospitality": {
+      "name": "Hospitality",
+      "description": "Transform guest experiences and optimize hotel operations with intelligent automation.",
+      "challenges": [
+        "Guest service response times",
+        "Staff efficiency",
+        "Multiple language support",
+        "Peak check-in/out periods",
+        "Service personalization"
+      ],
+      "solutions": [
+        "24/7 virtual concierge",
+        "Multilingual guest support",
+        "Automated room service",
+        "Predictive housekeeping",
+        "Guest preference tracking"
+      ]
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "description": "Improve patient experiences and optimize medical practice operations with AI-powered solutions.",
+      "challenges": [
+        "High call volumes for appointments",
+        "Staff burnout from routine tasks",
+        "Patient no-shows",
+        "Insurance verification delays",
+        "Prescription refill management"
+      ],
+      "solutions": [
+        "24/7 appointment scheduling",
+        "Automated patient reminders",
+        "Insurance verification",
+        "Prescription refill automation",
+        "Patient follow-up coordination"
+      ]
+    },
+    "retail": {
+      "name": "Retail",
+      "description": "Enhance customer service and streamline operations for retail businesses of all sizes.",
+      "challenges": [
+        "High volume of order status inquiries",
+        "Seasonal staffing challenges",
+        "Customer service consistency",
+        "Returns processing",
+        "Inventory information access"
+      ],
+      "solutions": [
+        "Automated order status updates",
+        "Return authorization processing",
+        "Product availability checks",
+        "Loyalty program management",
+        "After-hours customer support"
+      ]
+    },
+    "legal": {
+      "name": "Legal Services",
+      "description": "Optimize client intake, appointment scheduling, and routine inquiries for legal practices.",
+      "challenges": [
+        "Client intake inefficiencies",
+        "High volume of status inquiries",
+        "Appointment scheduling conflicts",
+        "Document collection delays",
+        "After-hours availability"
+      ],
+      "solutions": [
+        "Automated client intake",
+        "Case status update system",
+        "Intelligent scheduling",
+        "Document request automation",
+        "24/7 basic legal information"
+      ]
+    },
+    "real-estate": {
+      "name": "Real Estate",
+      "description": "Streamline property management and real estate operations with intelligent automation.",
+      "challenges": [
+        "Property showing coordination",
+        "Tenant maintenance requests",
+        "Rental inquiry management",
+        "Agent availability constraints",
+        "After-hours support needs"
+      ],
+      "solutions": [
+        "Automated showing scheduling",
+        "Maintenance request processing",
+        "Property availability updates",
+        "Tenant communication system",
+        "24/7 property information"
+      ]
+    },
+    "call-centers": {
+      "name": "Call Centers",
+      "description": "Enhance efficiency, reduce wait times, and improve customer satisfaction in contact centers.",
+      "challenges": [
+        "High call volumes",
+        "Agent turnover",
+        "Call routing inefficiencies",
+        "Quality consistency",
+        "After-hours coverage"
+      ],
+      "solutions": [
+        "AI-powered call triage",
+        "Automated routine inquiries",
+        "Intelligent call routing",
+        "Real-time agent assistance",
+        "24/7 service coverage"
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "description": "Improve administrative efficiency and student services in educational institutions.",
+      "challenges": [
+        "Enrollment inquiry management",
+        "Administrative staff shortages",
+        "Student service accessibility",
+        "Schedule management",
+        "After-hours support"
+      ],
+      "solutions": [
+        "Automated enrollment assistance",
+        "Course registration support",
+        "Financial aid information",
+        "Campus service information",
+        "24/7 student support"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your business with AI? Get in touch with our team.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "phone": "Phone Number",
+      "industry": "Industry",
+      "message": "Message",
+      "submit": "Submit",
+      "demo_request": "Request a Demo",
+      "contact_us": "Get in Touch",
+      "demo_description": "Schedule a personalized demo to see how our AI solutions can work for your business.",
+      "contact_description": "Have questions or need more information? We're here to help.",
+      "privacy_notice": "We respect your privacy. Your information will not be shared with third parties."
+    },
+    "headquarters": "Headquarters",
+    "support_email": "Global Support Email",
+    "phone_numbers": "Regional Phone Numbers"
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "press": "Press",
+    "blog": "Blog",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "case_studies": "Case Studies",
+    "webinars": "Webinars",
+    "api": "API",
+    "legal": "Legal",
+    "privacy_policy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2025 Agentic Order Inc. All rights reserved."
+  }
+} 

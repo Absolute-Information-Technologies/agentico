@@ -1,0 +1,175 @@
+{
+  "common": {
+    "company_name": "Agentic Order Inc",
+    "tagline": "大量サービス業界向けAI駆動型自動化",
+    "learn_more": "詳細を見る",
+    "contact_us": "お問い合わせ",
+    "try_demo": "デモを試す",
+    "request_demo": "デモをリクエスト",
+    "calculate_roi": "ROIを計算",
+    "read_case_study": "事例を読む",
+    "view_integrations": "連携を見る",
+    "languages": "言語"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "solutions": "ソリューション",
+    "industries": "業界",
+    "markets": "グローバル市場",
+    "contact": "お問い合わせ",
+    "partners": "パートナー"
+  },
+  "home": {
+    "hero_title": "サービス業界向け音声優先AI自動化",
+    "hero_subtitle": "AI駆動型、多言語対応、コンテキスト認識の自動化システムで、顧客サービスを向上し、業務効率を改善し、収益成長を促進します。",
+    "solutions_title": "AIソリューション",
+    "industries_title": "対応業界",
+    "markets_title": "グローバルプレゼンス",
+    "features_title": "主な機能",
+    "features": {
+      "speech_recognition": "高度な音声認識",
+      "voice_biometrics": "音声生体認証",
+      "nlp": "自然言語処理",
+      "real_time": "リアルタイムビジネス連携",
+      "multilingual": "多言語対応",
+      "context_aware": "コンテキスト認識インテリジェンス"
+    },
+    "testimonials_title": "お客様の声",
+    "cta_title": "ビジネスの変革準備はできていますか？",
+    "cta_subtitle": "当社のAIソリューションがどのように役立つか、デモをスケジュールしてご確認ください。"
+  },
+  "solutions": {
+    "orderlyai": {
+      "name": "OrderlyAi",
+      "subtitle": "AI駆動型レストラン自動化",
+      "description": "AI音声技術でレストランの注文受付、予約、顧客サービスを効率化します。",
+      "features": [
+        "自動電話注文",
+        "予約管理",
+        "顧客嗜好追跡",
+        "POSシステム連携",
+        "メニュー最適化"
+      ]
+    },
+    "hotelierai": {
+      "name": "HotelierAi",
+      "subtitle": "ホテル管理AIアシスタント",
+      "description": "インテリジェントな自動化でゲスト体験を向上し、ホテル運営を効率化します。",
+      "features": [
+        "自動チェックイン/チェックアウト",
+        "ルームサービスオーダー",
+        "コンシェルジュサービス",
+        "ゲストリクエスト管理",
+        "ハウスキーピング調整"
+      ]
+    }
+  },
+  "industries": {
+    "restaurants": {
+      "name": "レストラン",
+      "description": "AI駆動型ソリューションで運営を効率化し、顧客体験を向上させ、テーブル回転率を高めます。",
+      "challenges": [
+        "ピーク時の高い通話量",
+        "スタッフ不足",
+        "注文の正確性",
+        "顧客待ち時間",
+        "予約管理"
+      ],
+      "solutions": [
+        "自動注文受付",
+        "音声駆動予約",
+        "顧客嗜好追跡",
+        "シームレスなPOS連携",
+        "スタッフ配置最適化"
+      ]
+    },
+    "hospitality": {
+      "name": "ホスピタリティ",
+      "description": "インテリジェントな自動化でゲスト体験を変革し、ホテル運営を最適化します。",
+      "challenges": [
+        "ゲストサービス応答時間",
+        "スタッフ効率",
+        "多言語サポート",
+        "チェックイン/アウトのピーク時間",
+        "サービスのパーソナライゼーション"
+      ],
+      "solutions": [
+        "24/7バーチャルコンシェルジュ",
+        "多言語ゲストサポート",
+        "自動ルームサービス",
+        "予測型ハウスキーピング",
+        "ゲスト嗜好追跡"
+      ]
+    },
+    "healthcare": {
+      "name": "医療",
+      "description": "AI駆動型ソリューションで患者体験を向上し、医療実践の運営を最適化します。",
+      "challenges": [
+        "予約のための高い通話量",
+        "ルーティン業務によるスタッフの疲弊",
+        "患者の無断キャンセル",
+        "保険確認の遅延",
+        "処方箋更新管理"
+      ],
+      "solutions": [
+        "24/7予約スケジューリング",
+        "自動患者リマインダー",
+        "保険確認",
+        "処方箋更新の自動化",
+        "患者フォローアップ調整"
+      ]
+    },
+    "retail": {
+      "name": "小売業",
+      "description": "あらゆる規模の小売業向けに顧客サービスを向上し、業務を効率化します。",
+      "challenges": [
+        "注文状況問い合わせの高い量",
+        "季節的な人員配置の課題",
+        "顧客サービスの一貫性",
+        "返品処理",
+        "在庫情報へのアクセス"
+      ],
+      "solutions": [
+        "自動注文状況更新",
+        "返品承認処理",
+        "商品在庫確認",
+        "ロイヤルティプログラム管理",
+        "営業時間外の顧客サポート"
+      ]
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "AIでビジネスを変革する準備はできていますか？私たちのチームにご連絡ください。",
+    "form": {
+      "name": "氏名",
+      "email": "メールアドレス",
+      "company": "会社名",
+      "phone": "電話番号",
+      "industry": "業界",
+      "message": "メッセージ",
+      "submit": "送信",
+      "demo_request": "デモをリクエスト",
+      "privacy_notice": "私たちはあなたのプライバシーを尊重します。あなたの情報は第三者と共有されることはありません。"
+    },
+    "headquarters": "本社",
+    "support_email": "グローバルサポートメール",
+    "phone_numbers": "地域別電話番号"
+  },
+  "footer": {
+    "company": "会社情報",
+    "about": "会社概要",
+    "careers": "採用情報",
+    "press": "プレス",
+    "blog": "ブログ",
+    "resources": "リソース",
+    "documentation": "ドキュメント",
+    "case_studies": "事例研究",
+    "webinars": "ウェビナー",
+    "api": "API",
+    "legal": "法的情報",
+    "privacy_policy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "copyright": "© 2025 Agentic Order Inc. All rights reserved."
+  }
+} 

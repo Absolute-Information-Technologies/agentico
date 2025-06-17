@@ -1,0 +1,175 @@
+{
+  "common": {
+    "company_name": "Agentic Order Inc",
+    "tagline": "KI-gesteuerte Automatisierung für serviceorientierte Branchen mit hohem Volumen",
+    "learn_more": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns",
+    "try_demo": "Demo ausprobieren",
+    "request_demo": "Demo anfordern",
+    "calculate_roi": "ROI berechnen",
+    "read_case_study": "Fallstudie lesen",
+    "view_integrations": "Integrationen anzeigen",
+    "languages": "Sprachen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "solutions": "Lösungen",
+    "industries": "Branchen",
+    "markets": "Globale Märkte",
+    "contact": "Kontakt",
+    "partners": "Partner"
+  },
+  "home": {
+    "hero_title": "Sprachgesteuerte KI-Automatisierung für Dienstleistungsbranchen",
+    "hero_subtitle": "Verbessern Sie den Kundenservice, steigern Sie die betriebliche Effizienz und fördern Sie das Umsatzwachstum mit KI-gesteuerten, mehrsprachigen, kontextsensitiven Automatisierungssystemen.",
+    "solutions_title": "Unsere KI-Lösungen",
+    "industries_title": "Branchen, die wir bedienen",
+    "markets_title": "Globale Präsenz",
+    "features_title": "Hauptfunktionen",
+    "features": {
+      "speech_recognition": "Fortschrittliche Spracherkennung",
+      "voice_biometrics": "Stimmbiometrie",
+      "nlp": "Natürliche Sprachverarbeitung",
+      "real_time": "Echtzeit-Geschäftsintegration",
+      "multilingual": "Mehrsprachige Unterstützung",
+      "context_aware": "Kontextsensitive Intelligenz"
+    },
+    "testimonials_title": "Was unsere Kunden sagen",
+    "cta_title": "Bereit, Ihr Unternehmen zu transformieren?",
+    "cta_subtitle": "Vereinbaren Sie eine Demo, um zu sehen, wie unsere KI-Lösungen für Sie arbeiten können."
+  },
+  "solutions": {
+    "orderlyai": {
+      "name": "OrderlyAi",
+      "subtitle": "KI-gesteuerte Restaurant-Automatisierung",
+      "description": "Optimieren Sie Bestellannahme, Reservierungen und Kundenservice für Restaurants mit KI-Sprachtechnologie.",
+      "features": [
+        "Automatisierte Telefonbestellungen",
+        "Reservierungsverwaltung",
+        "Kundenpräferenz-Tracking",
+        "POS-Integration",
+        "Menüoptimierung"
+      ]
+    },
+    "hotelierai": {
+      "name": "HotelierAi",
+      "subtitle": "KI-Assistent für Hotelmanagement",
+      "description": "Verbessern Sie das Gästeerlebnis und optimieren Sie den Hotelbetrieb mit intelligenter Automatisierung.",
+      "features": [
+        "Automatisiertes Ein-/Auschecken",
+        "Zimmerservice-Bestellung",
+        "Concierge-Dienste",
+        "Gästeanfragen-Management",
+        "Housekeeping-Koordination"
+      ]
+    }
+  },
+  "industries": {
+    "restaurants": {
+      "name": "Restaurants",
+      "description": "Optimieren Sie Abläufe, verbessern Sie das Kundenerlebnis und erhöhen Sie den Tischumsatz mit KI-gestützten Lösungen.",
+      "challenges": [
+        "Hohes Anrufvolumen zu Stoßzeiten",
+        "Personalmangel",
+        "Bestellgenauigkeit",
+        "Kundenwartezeiten",
+        "Reservierungsverwaltung"
+      ],
+      "solutions": [
+        "Automatisierte Bestellannahme",
+        "Sprachgesteuerte Reservierungen",
+        "Kundenpräferenz-Tracking",
+        "Nahtlose POS-Integration",
+        "Personalzuweisungsoptimierung"
+      ]
+    },
+    "hospitality": {
+      "name": "Hotellerie",
+      "description": "Transformieren Sie das Gästeerlebnis und optimieren Sie den Hotelbetrieb mit intelligenter Automatisierung.",
+      "challenges": [
+        "Reaktionszeiten im Gästeservice",
+        "Personaleffizienz",
+        "Mehrsprachige Unterstützung",
+        "Stoßzeiten beim Ein-/Auschecken",
+        "Servicepersonalisierung"
+      ],
+      "solutions": [
+        "24/7 virtueller Concierge",
+        "Mehrsprachige Gästeunterstützung",
+        "Automatisierter Zimmerservice",
+        "Prädiktives Housekeeping",
+        "Gästepräferenz-Tracking"
+      ]
+    },
+    "healthcare": {
+      "name": "Gesundheitswesen",
+      "description": "Verbessern Sie das Patientenerlebnis und optimieren Sie den Betrieb medizinischer Praxen mit KI-gestützten Lösungen.",
+      "challenges": [
+        "Hohes Anrufvolumen für Termine",
+        "Mitarbeiterbelastung durch Routineaufgaben",
+        "Patientenausfälle",
+        "Verzögerungen bei der Versicherungsüberprüfung",
+        "Verwaltung von Rezeptverlängerungen"
+      ],
+      "solutions": [
+        "24/7 Terminplanung",
+        "Automatisierte Patientenerinnerungen",
+        "Versicherungsüberprüfung",
+        "Automatisierung von Rezeptverlängerungen",
+        "Koordination der Patientennachsorge"
+      ]
+    },
+    "retail": {
+      "name": "Einzelhandel",
+      "description": "Verbessern Sie den Kundenservice und optimieren Sie die Abläufe für Einzelhandelsunternehmen jeder Größe.",
+      "challenges": [
+        "Hohes Volumen an Bestandsstatusanfragen",
+        "Saisonale Personalherausforderungen",
+        "Konsistenz im Kundenservice",
+        "Rückgabebearbeitung",
+        "Zugang zu Bestandsinformationen"
+      ],
+      "solutions": [
+        "Automatisierte Bestellstatusaktualisierungen",
+        "Rückgabeautorisierungsverarbeitung",
+        "Produktverfügbarkeitsprüfungen",
+        "Verwaltung von Treueprogrammen",
+        "Kundenbetreuung außerhalb der Geschäftszeiten"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, Ihr Unternehmen mit KI zu transformieren? Nehmen Sie Kontakt mit unserem Team auf.",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "company": "Firmenname",
+      "phone": "Telefonnummer",
+      "industry": "Branche",
+      "message": "Nachricht",
+      "submit": "Absenden",
+      "demo_request": "Demo anfordern",
+      "privacy_notice": "Wir respektieren Ihre Privatsphäre. Ihre Daten werden nicht an Dritte weitergegeben."
+    },
+    "headquarters": "Hauptsitz",
+    "support_email": "Globale Support-E-Mail",
+    "phone_numbers": "Regionale Telefonnummern"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "careers": "Karriere",
+    "press": "Presse",
+    "blog": "Blog",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "case_studies": "Fallstudien",
+    "webinars": "Webinare",
+    "api": "API",
+    "legal": "Rechtliches",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© 2025 Agentic Order Inc. Alle Rechte vorbehalten."
+  }
+} 
