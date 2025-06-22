@@ -10,7 +10,7 @@ type ContactFormWrapperProps = {
 };
 
 export default function ContactFormWrapper({ dictionary, locale }: ContactFormWrapperProps) {
-  // Use the safe search params hook
+  // Use the safe search params hook that's compatible with Next.js 15
   const { params, isLoaded } = useSearchParamsSafe();
   
   // Show loading state until parameters are extracted

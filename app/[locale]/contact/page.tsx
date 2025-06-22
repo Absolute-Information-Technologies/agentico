@@ -42,7 +42,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
           </p>
         </div>
         
-        <Suspense fallback={<div className="text-center py-10">Loading form...</div>}>
+        <Suspense fallback={<div className="text-center py-10">Loading contact form...</div>}>
           <ContactFormWrapper 
             dictionary={dictionary} 
             locale={locale as Locale} 
