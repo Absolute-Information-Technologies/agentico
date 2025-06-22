@@ -67,7 +67,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   
+  // During SSR or if context is not available, return null instead of throwing
   if (context === undefined) {
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined') {
+      // During SSR, return null to indicate context is not available
+      return null;
+    }
     throw new Error('useTheme must be used within a ThemeProvider');
   }
   
