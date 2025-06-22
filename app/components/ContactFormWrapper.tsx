@@ -2,28 +2,26 @@
 
 import ContactForm from './ContactForm';
 import type { Locale } from '../lib/i18n';
-import { useSearchParamsSafe, getParamValue } from '../lib/clientUtils';
 
 type ContactFormWrapperProps = {
   dictionary: any;
   locale: Locale;
+  // Add direct props instead of using search params
+  isDemo?: boolean;
+  solution?: string;
+  industry?: string;
+  market?: string;
 };
 
-export default function ContactFormWrapper({ dictionary, locale }: ContactFormWrapperProps) {
-  // Use the safe search params hook that's compatible with Next.js 15
-  const { params, isLoaded } = useSearchParamsSafe();
-  
-  // Show loading state until parameters are extracted
-  if (!isLoaded) {
-    return <div className="text-center py-4">Loading form parameters...</div>;
-  }
-  
-  // Extract form parameters with proper typing
-  const isDemo = getParamValue(params, 'demo', false, (value) => value === 'true');
-  const solution = getParamValue(params, 'solution', undefined as string | undefined);
-  const industry = getParamValue(params, 'industry', undefined as string | undefined);
-  const market = getParamValue(params, 'market', undefined as string | undefined);
-  
+export default function ContactFormWrapper({ 
+  dictionary, 
+  locale,
+  isDemo = false,
+  solution,
+  industry,
+  market
+}: ContactFormWrapperProps) {
+  // No longer using search params directly
   return (
     <ContactForm
       dictionary={dictionary}

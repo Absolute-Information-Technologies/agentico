@@ -1,24 +1,18 @@
 'use client';
 
 import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import { useSearchParamsSafe } from '../lib/clientUtils';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function Analytics() {
   const pathname = usePathname();
-  const { params, isLoaded } = useSearchParamsSafe();
+  const searchParams = useSearchParams();
   
   useEffect(() => {
-    // Only track after params are loaded
-    if (!isLoaded) return;
+    // Only track after component mounts
+    if (!searchParams) return;
     
     // Track page views
-    const searchParamsString = new URLSearchParams(
-      Object.entries(params)
-        .filter(([_, value]) => value !== null)
-        .map(([key, value]) => [key, value as string])
-    ).toString();
-    
+    const searchParamsString = searchParams.toString();
     const url = pathname + (searchParamsString ? `?${searchParamsString}` : '');
     
     // Simple page view tracking
@@ -54,7 +48,7 @@ export default function Analytics() {
     // Track the page view
     trackPageView();
     
-  }, [pathname, params, isLoaded]);
+  }, [pathname, searchParams]);
   
   // This component doesn't render anything
   return null;
