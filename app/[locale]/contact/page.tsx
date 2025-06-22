@@ -1,4 +1,5 @@
 import { Metadata, ResolvingMetadata } from 'next';
+import { Suspense } from 'react';
 import { getDictionary } from '../../lib/getDictionary';
 import { Locale } from '../../lib/i18n';
 import ContactForm from '../../components/ContactForm';
@@ -40,6 +41,9 @@ export default async function ContactPage({
   
   // Check if this is a demo request
   const isDemo = resolvedSearchParams?.demo === 'true';
+  const solution = resolvedSearchParams?.solution as string | undefined;
+  const industry = resolvedSearchParams?.industry as string | undefined;
+  const market = resolvedSearchParams?.market as string | undefined;
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,11 +57,16 @@ export default async function ContactPage({
           </p>
         </div>
         
-        <ContactForm 
-          dictionary={dictionary} 
-          locale={locale as Locale} 
-          isDemo={isDemo}
-        />
+        <Suspense fallback={<div className="text-center py-10">Loading form...</div>}>
+          <ContactForm 
+            dictionary={dictionary} 
+            locale={locale as Locale} 
+            isDemo={isDemo}
+            solution={solution}
+            industry={industry}
+            market={market}
+          />
+        </Suspense>
         
         <div className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
