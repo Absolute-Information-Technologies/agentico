@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
   // Check if solution, industry, and market exist and are compatible
   if (!dictionary.solutions[solution] || 
       !dictionary.industries[industry] || 
+      !dictionary.markets || 
       !dictionary.markets[market]) {
     return {
       title: 'Not Found',
@@ -37,7 +38,13 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
   
   const solutionData = dictionary.solutions[solution];
   const industryData = dictionary.industries[industry];
-  const marketData = dictionary.markets[market];
+  const marketData = dictionary.markets?.[market];
+  
+  if (!marketData) {
+    return {
+      title: 'Not Found',
+    };
+  }
   
   return {
     title: `${solutionData.name} for ${industryData.name} in ${marketData.name} | ${dictionary.common.company_name}`,
@@ -61,6 +68,7 @@ export default async function CombinedPage({ params }: CombinedPageProps) {
   // Check if solution, industry, and market exist and are compatible
   if (!dictionary.solutions[solution] || 
       !dictionary.industries[industry] || 
+      !dictionary.markets || 
       !dictionary.markets[market]) {
     notFound();
   }
@@ -72,7 +80,11 @@ export default async function CombinedPage({ params }: CombinedPageProps) {
   }
   
   const solutionData = dictionary.solutions[solution];
-  const marketData = dictionary.markets[market];
+  const marketData = dictionary.markets?.[market];
+  
+  if (!marketData) {
+    notFound();
+  }
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -190,4 +202,4 @@ export async function generateStaticParams() {
 }
 
 // Add ISR configuration
-export const revalidate = 3600; // Revalidate every hour 
+export const revalidate = 3600; // Revalidate every hour
