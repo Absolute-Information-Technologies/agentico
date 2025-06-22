@@ -1,8 +1,8 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 import ContactForm from './ContactForm';
-import { Locale } from '../lib/i18n';
+import type { Locale } from '../lib/i18n';
+import { useSearchParamsSafe, getParamValue } from '../lib/clientUtils';
 
 type ContactFormWrapperProps = {
   dictionary: any;
@@ -10,13 +10,19 @@ type ContactFormWrapperProps = {
 };
 
 export default function ContactFormWrapper({ dictionary, locale }: ContactFormWrapperProps) {
-  const searchParams = useSearchParams();
+  // Use the safe search params hook
+  const { params, isLoaded } = useSearchParamsSafe();
   
-  // Get parameters from searchParams
-  const isDemo = searchParams.get('demo') === 'true';
-  const solution = searchParams.get('solution') || undefined;
-  const industry = searchParams.get('industry') || undefined;
-  const market = searchParams.get('market') || undefined;
+  // Show loading state until parameters are extracted
+  if (!isLoaded) {
+    return <div className="text-center py-4">Loading form parameters...</div>;
+  }
+  
+  // Extract form parameters with proper typing
+  const isDemo = getParamValue(params, 'demo', false, (value) => value === 'true');
+  const solution = getParamValue(params, 'solution', undefined as string | undefined);
+  const industry = getParamValue(params, 'industry', undefined as string | undefined);
+  const market = getParamValue(params, 'market', undefined as string | undefined);
   
   return (
     <ContactForm
