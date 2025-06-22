@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { getDictionary } from '../../lib/getDictionary';
 import { Locale } from '../../lib/i18n';
-import ContactPageClient from '../../components/ContactPageClient';
+import { Suspense } from 'react';
+import ContactFormWrapper from '../../components/ContactFormWrapper';
 
 type Params = Promise<{ locale: string }>;
 
@@ -40,12 +41,9 @@ export default async function ContactPage({ params }: ContactPageProps) {
             {dictionary.contact.subtitle}
           </p>
         </div>
-        
-        <ContactPageClient 
-          dictionary={dictionary} 
-          locale={locale as Locale} 
-        />
-        
+        <Suspense fallback={<div className="text-center py-10">Loading contact form...</div>}>
+          <ContactFormWrapper dictionary={dictionary} locale={locale as Locale} />
+        </Suspense>
         <div className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
