@@ -2,7 +2,7 @@ import { Metadata, ResolvingMetadata } from 'next';
 import { Suspense } from 'react';
 import { getDictionary } from '../../lib/getDictionary';
 import { Locale } from '../../lib/i18n';
-import ContactForm from '../../components/ContactForm';
+import ContactFormWrapper from '../../components/ContactFormWrapper';
 
 type Params = Promise<{ locale: string }>;
 
@@ -39,11 +39,8 @@ export default async function ContactPage({
   // Await searchParams if it exists
   const resolvedSearchParams = searchParams ? await searchParams : {};
   
-  // Check if this is a demo request
+  // Check if this is a demo request for the page title
   const isDemo = resolvedSearchParams?.demo === 'true';
-  const solution = resolvedSearchParams?.solution as string | undefined;
-  const industry = resolvedSearchParams?.industry as string | undefined;
-  const market = resolvedSearchParams?.market as string | undefined;
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -58,13 +55,9 @@ export default async function ContactPage({
         </div>
         
         <Suspense fallback={<div className="text-center py-10">Loading form...</div>}>
-          <ContactForm 
+          <ContactFormWrapper 
             dictionary={dictionary} 
             locale={locale as Locale} 
-            isDemo={isDemo}
-            solution={solution}
-            industry={industry}
-            market={market}
           />
         </Suspense>
         
