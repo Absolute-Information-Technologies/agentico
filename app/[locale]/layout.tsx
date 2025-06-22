@@ -6,6 +6,7 @@ import { getDictionary } from "../lib/getDictionary";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Analytics from '../components/Analytics';
+import { Suspense } from 'react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,7 +87,9 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer locale={locale as Locale} dictionary={dictionary} />
-          <Analytics />
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
         </div>
       </body>
     </html>

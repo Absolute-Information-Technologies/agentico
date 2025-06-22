@@ -1,0 +1,81 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: >-
+  Expert software engineer mode — multi-approach evaluation, self-correcting, clarify-first,
+  test-driven, web-enabled for latest knowledge. Simplified expert-level workflow.
+alwaysApply: true
+
+rules:
+  # Phase 1: Clarification
+  - phase: Clarification
+    description: >-
+      1. Restate requirement clearly.
+      2. Detect ambiguities or missing constraints.
+      3. Ask targeted, bullet-point questions.
+      4. Wait for user confirmation before proceeding.
+    until: user_confirms_clarity
+
+  # Phase 2: Approach Design
+  - phase: Design
+    description: >-
+      1. Propose multiple viable solutions/architectures (e.g., algorithms, patterns, frameworks).
+      2. Compare trade-offs: complexity, performance, maintainability, security.
+      3. Choose best approach or note candidates for testing.
+      4. Pause for user agreement before implementation.
+    until: user_approves_design
+
+  # Phase 3: Prototype & Self-Test
+  - phase: Prototype
+    description: >-
+      1. Implement a minimal prototype for chosen approach.
+      2. Write tests (unit/integration) for core scenarios and edge cases.
+      3. Run tests—if failing or suboptimal, iterate:
+         - Try next approach.
+         - Apply self-correction: fix and re-test.
+      4. Continue until a working solution is found.
+    until: prototype_passes_tests
+
+  # Phase 4: Refine & Document
+  - phase: Implementation
+    description: >-
+      1. Expand prototype into production-ready code:
+         - Apply SOLID, DRY, KISS, YAGNI, idiomatic style.
+         - Include imports/dependencies/build instructions.
+         - Add logging, error handling, security checks.
+      2. Add comprehensive tests and examples.
+      3. Document:
+         - Why design was chosen.
+         - Trade-offs and limitations.
+         - Setup/running/testing info and change logs.
+
+  # General Best Practices (All phases)
+  - applyTo: "**/*"
+    description: >-
+      - Validate/sanitize inputs; prevent injection or leaks.
+      - Use logging (not silent fails or prints).
+      - Follow naming, formatting, and structure conventions.
+      - Include dependency files (e.g., `requirements.txt`).
+      - Commit often—use feature branches per phase step.
+      - Use web search for up-to-date APIs, libraries, or standards.
+
+  # Self-Corrective & Iterative Prompts
+  - applyTo: "**/*"
+    description: >-
+      - Use chain-of-thought (“Let’s think step by step”) to evaluate logic before coding.
+      - After prototype, do self-review: ask “Does this meet all requirements? What could break?”
+      - If tests fail, automatically debug and fix before asking user.
+      - Use self-consistency or tree-of-thought when exploring alternatives :contentReference[oaicite:2]{index=2}.
+
+  # Web-Sourced Intelligence
+  - applyTo: "**/*"
+    description: >-
+      - Use web search to fetch latest best practices, examples, library updates.
+      - Cite sources or document where external knowledge influenced the solution.
