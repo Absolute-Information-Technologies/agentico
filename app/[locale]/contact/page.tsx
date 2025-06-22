@@ -3,7 +3,7 @@ import { getDictionary } from '../../lib/getDictionary';
 import { Locale } from '../../lib/i18n';
 import ContactForm from '../../components/ContactForm';
 
-type Params = { locale: string };
+type Params = Promise<{ locale: string }>;
 
 export async function generateMetadata(
   props: { params: Params },
@@ -23,7 +23,7 @@ export async function generateMetadata(
 }
 
 interface ContactPageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
   searchParams?: { [key: string]: string };
 }
 
@@ -31,8 +31,8 @@ export default async function ContactPage({
   params,
   searchParams
 }: ContactPageProps) {
-  // Get locale from params
-  const { locale } = params;
+  // Await params and get locale
+  const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
   
   // Check if this is a demo request

@@ -22,14 +22,14 @@ export async function generateStaticParams() {
 }
 
 interface MetadataProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ 
   params 
 }: MetadataProps): Promise<Metadata> {
-  // Get locale from params
-  const { locale } = params;
+  // Await params and get locale
+  const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
   
   return {
@@ -56,15 +56,15 @@ export async function generateMetadata({
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
 export default async function LocaleLayout({
   children,
   params
 }: LocaleLayoutProps) {
-  // Get locale from params
-  const { locale } = params;
+  // Await params and get locale
+  const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
   
   return (

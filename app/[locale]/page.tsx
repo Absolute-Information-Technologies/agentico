@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { getDictionary } from '../lib/getDictionary';
 import { Locale } from '../lib/i18n';
 
-type Params = { locale: string };
+type Params = Promise<{ locale: string }>;
 
 export async function generateMetadata(
   props: { params: Params },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // Await the params
-  const params = props.params;
+  const params = await props.params;
   const { locale } = params;
   
   // Get dictionary data
@@ -24,12 +24,12 @@ export async function generateMetadata(
 }
 
 interface HomePageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
 export default async function HomePage({ params }: HomePageProps) {
-  // Get locale from params
-  const { locale } = params;
+  // Await params and get locale
+  const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
   
   const solutions = [
