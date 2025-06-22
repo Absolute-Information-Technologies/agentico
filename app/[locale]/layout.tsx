@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Analytics from '../components/Analytics';
 import { Suspense } from 'react';
+import { ThemeProvider } from '../components/ThemeProvider';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -81,16 +82,18 @@ export default async function LocaleLayout({
         ))}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
-        <div className="flex flex-col min-h-screen">
-          <Header locale={locale as Locale} dictionary={dictionary} />
-          <main className="flex-grow pt-16">
-            {children}
-          </main>
-          <Footer locale={locale as Locale} dictionary={dictionary} />
-          <Suspense fallback={null}>
-            <Analytics />
-          </Suspense>
-        </div>
+        <ThemeProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header locale={locale as Locale} dictionary={dictionary} />
+            <main className="flex-grow pt-16">
+              {children}
+            </main>
+            <Footer locale={locale as Locale} dictionary={dictionary} />
+            <Suspense fallback={null}>
+              <Analytics />
+            </Suspense>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
