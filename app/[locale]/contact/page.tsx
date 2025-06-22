@@ -24,7 +24,7 @@ export async function generateMetadata(
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
-  searchParams?: { [key: string]: string };
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export default async function ContactPage({
@@ -35,8 +35,11 @@ export default async function ContactPage({
   const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
   
+  // Await searchParams if it exists
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  
   // Check if this is a demo request
-  const isDemo = searchParams?.demo === 'true';
+  const isDemo = resolvedSearchParams?.demo === 'true';
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
